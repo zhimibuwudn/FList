@@ -43,6 +43,17 @@ export default defineUserConfig({
       }),
     },
     {
+      // 挂载路径
+      mountPath: "/bitwarden",
+      // 文件解析器，这里使用githubReleasesFilesAnalysis,可以解析github的release文件
+      analysis: githubReleasesFilesAnalysis({
+        // 仓库所有者的用户名
+        user: "bitwarden",
+        // 仓库所有者的仓库名
+        repository: "clients"
+      }),
+    },
+    {
       mountPath: "/",
       analysis: githubReleasesFilesAnalysis({ user: "jianjianai", repository: "FList" }),
       // 下载代理配置,支持多个平台，参考:https://jjaw.cn/2024/8/3/flist-config-porxy/
