@@ -54,6 +54,94 @@ export default defineUserConfig({
       }),
     },
     {
+      // 挂载路径
+      mountPath: "/waterfly-iii",
+      // 文件解析器，这里使用githubReleasesFilesAnalysis,可以解析github的release文件
+      analysis: githubReleasesFilesAnalysis({
+        // 仓库所有者的用户名
+        user: "dreautall",
+        // 仓库所有者的仓库名
+        repository: "waterfly-iii"
+      }),
+    },
+    {
+      // 挂载路径
+      mountPath: "/firefly-iii",
+      // 文件解析器，这里使用githubReleasesFilesAnalysis,可以解析github的release文件
+      analysis: githubReleasesFilesAnalysis({
+        // 仓库所有者的用户名
+        user: "dfirefly-iii",
+        // 仓库所有者的仓库名
+        repository: "firefly-iii"
+      }),
+    },
+    {
+      // 挂载路径
+      mountPath: "/misskey",
+      // 文件解析器，这里使用githubReleasesFilesAnalysis,可以解析github的release文件
+      analysis: githubReleasesFilesAnalysis({
+        // 仓库所有者的用户名
+        user: "misskey-dev",
+        // 仓库所有者的仓库名
+        repository: "misskey"
+      }),
+    },
+    {
+      // 挂载路径
+      mountPath: "/fluxy",
+      // 文件解析器，这里使用githubReleasesFilesAnalysis,可以解析github的release文件
+      analysis: githubReleasesFilesAnalysis({
+        // 仓库所有者的用户名
+        user: "alley-rs",
+        // 仓库所有者的仓库名
+        repository: "fluxy"
+      }),
+    },
+    {
+      // 挂载路径
+      mountPath: "/joplin",
+      // 文件解析器，这里使用githubReleasesFilesAnalysis,可以解析github的release文件
+      analysis: githubReleasesFilesAnalysis({
+        // 仓库所有者的用户名
+        user: "laurent22",
+        // 仓库所有者的仓库名
+        repository: "joplin"
+      }),
+    },
+    {
+      // 挂载路径
+      mountPath: "/docker-snapdrop",
+      // 文件解析器，这里使用githubReleasesFilesAnalysis,可以解析github的release文件
+      analysis: githubReleasesFilesAnalysis({
+        // 仓库所有者的用户名
+        user: "linuxserver",
+        // 仓库所有者的仓库名
+        repository: "docker-snapdrop"
+      }),
+    },
+    {
+      // 挂载路径
+      mountPath: "/lucky",
+      // 文件解析器，这里使用githubReleasesFilesAnalysis,可以解析github的release文件
+      analysis: githubReleasesFilesAnalysis({
+        // 仓库所有者的用户名
+        user: "gdy666",
+        // 仓库所有者的仓库名
+        repository: "lucky"
+      }),
+    },
+    {
+      // 挂载路径
+      mountPath: "/ddns-go",
+      // 文件解析器，这里使用githubReleasesFilesAnalysis,可以解析github的release文件
+      analysis: githubReleasesFilesAnalysis({
+        // 仓库所有者的用户名
+        user: "jeessy2",
+        // 仓库所有者的仓库名
+        repository: "ddns-go"
+      }),
+    },
+    {
       mountPath: "/",
       analysis: githubReleasesFilesAnalysis({ user: "jianjianai", repository: "FList" }),
       // 下载代理配置,支持多个平台，参考:https://jjaw.cn/2024/8/3/flist-config-porxy/
