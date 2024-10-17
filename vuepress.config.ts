@@ -62,16 +62,6 @@ export default defineUserConfig({
       downProxy: cloudflarePagesDownProxy(),
     },
     {
-      mountPath: "/",
-      // 这里使用 fileUrlTreeAnalysis 文件放到对应的文件路径中
-      analysis: fileUrlTreeAnalysis({
-        "/test2/文件树-测试视频1.mp4": "https://github.com/jianjianai/FList/releases/download/root/test.video.2.1080p.webm",
-        "/文件树测试/文件树-测试视频1.mp4": "https://github.com/jianjianai/FList/releases/download/root/test.video.2.1080p.webm",
-        "/文件树-测试视频1.mp4": "https://github.com/jianjianai/FList/releases/download/root/test.video.2.1080p.webm"
-      }),
-      downProxy: cloudflarePagesDownProxy(),//如果文件树地址下载比较慢，也可以配置代理
-    },
-    {
       mountPath: "/huggingface测试",
       analysis: huggingFaceDatasetsAnalysis({
         userName: "Open-Orca",
@@ -80,21 +70,6 @@ export default defineUserConfig({
         path: "/",
         //最大深度,如果文件夹有很多层最大递归解析多少层，默认10
         maxDeep: 3
-      }),
-    },
-    {
-      mountPath: "/gitee测试/发行版",
-      analysis: giteeReleasesFilesAnalysis({
-        user: "jja8",
-        repository: "flist-test",
-        direction: "desc"
-      })
-    },
-    {
-      mountPath: "/gitee测试/仓库",
-      analysis: giteeReposAnalysis({
-        user: "jja8",
-        repository: "flist-test"
       }),
     },
     {
