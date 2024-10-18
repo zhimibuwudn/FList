@@ -58,9 +58,7 @@ export default defineUserConfig({
       mountPath: "/waterfly-iii",
       // 文件解析器，这里使用githubReleasesFilesAnalysis,可以解析github的release文件
       analysis: githubReleasesFilesAnalysis({
-        // 仓库所有者的用户名
         user: "dreautall",
-        // 仓库所有者的仓库名
         repository: "waterfly-iii"
       }),
     },
@@ -69,9 +67,7 @@ export default defineUserConfig({
       mountPath: "/firefly-iii",
       // 文件解析器，这里使用githubReleasesFilesAnalysis,可以解析github的release文件
       analysis: githubReleasesFilesAnalysis({
-        // 仓库所有者的用户名
         user: "dfirefly-iii",
-        // 仓库所有者的仓库名
         repository: "firefly-iii"
       }),
     },
@@ -80,9 +76,7 @@ export default defineUserConfig({
       mountPath: "/misskey",
       // 文件解析器，这里使用githubReleasesFilesAnalysis,可以解析github的release文件
       analysis: githubReleasesFilesAnalysis({
-        // 仓库所有者的用户名
         user: "misskey-dev",
-        // 仓库所有者的仓库名
         repository: "misskey"
       }),
     },
@@ -100,9 +94,7 @@ export default defineUserConfig({
       mountPath: "/joplin",
       // 文件解析器，这里使用githubReleasesFilesAnalysis,可以解析github的release文件
       analysis: githubReleasesFilesAnalysis({
-        // 仓库所有者的用户名
         user: "laurent22",
-        // 仓库所有者的仓库名
         repository: "joplin"
       }),
     },
@@ -111,9 +103,7 @@ export default defineUserConfig({
       mountPath: "/docker-snapdrop",
       // 文件解析器，这里使用githubReleasesFilesAnalysis,可以解析github的release文件
       analysis: githubReleasesFilesAnalysis({
-        // 仓库所有者的用户名
         user: "linuxserver",
-        // 仓库所有者的仓库名
         repository: "docker-snapdrop"
       }),
     },
@@ -122,9 +112,7 @@ export default defineUserConfig({
       mountPath: "/lucky",
       // 文件解析器，这里使用githubReleasesFilesAnalysis,可以解析github的release文件
       analysis: githubReleasesFilesAnalysis({
-        // 仓库所有者的用户名
         user: "gdy666",
-        // 仓库所有者的仓库名
         repository: "lucky"
       }),
     },
@@ -133,9 +121,7 @@ export default defineUserConfig({
       mountPath: "/ddns-go",
       // 文件解析器，这里使用githubReleasesFilesAnalysis,可以解析github的release文件
       analysis: githubReleasesFilesAnalysis({
-        // 仓库所有者的用户名
         user: "jeessy2",
-        // 仓库所有者的仓库名
         repository: "ddns-go"
       }),
     },
