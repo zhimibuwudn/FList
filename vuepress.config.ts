@@ -91,6 +91,15 @@ export default defineUserConfig({
     },
     {
       // 挂载路径
+      mountPath: "/rustdesk",
+      // 文件解析器，这里使用githubReleasesFilesAnalysis,可以解析github的release文件
+      analysis: githubReleasesFilesAnalysis({
+        user: "rustdesk",
+        repository: "rustdesk"
+      }),
+    },
+    {
+      // 挂载路径
       mountPath: "/docker-snapdrop",
       // 文件解析器，这里使用githubReleasesFilesAnalysis,可以解析github的release文件
       analysis: githubReleasesFilesAnalysis({
