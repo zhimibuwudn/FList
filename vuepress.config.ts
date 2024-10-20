@@ -82,6 +82,15 @@ export default defineUserConfig({
     },
     {
       // 挂载路径
+      mountPath: "/screego",
+      // 文件解析器，这里使用githubReleasesFilesAnalysis,可以解析github的release文件
+      analysis: githubReleasesFilesAnalysis({
+        user: "screego",
+        repository: "server"
+      }),
+    },
+    {
+      // 挂载路径
       mountPath: "/joplin",
       // 文件解析器，这里使用githubReleasesFilesAnalysis,可以解析github的release文件
       analysis: githubReleasesFilesAnalysis({
