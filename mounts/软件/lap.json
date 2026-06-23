@@ -1,0 +1,12 @@
+{
+  "analysis": {
+    "type": "githubReleasesFilesAnalysis",
+    "options": {
+      "user": "julyx10",
+      "repository": "lap",
+      "authorizationToken": {"$env": "GITHUB_TOKEN"},
+      "per_page": 10
+    }    
+  },
+  "downProxy": {"type": "cloudflarePagesDownProxy"}
+}
