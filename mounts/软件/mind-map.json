@@ -2,8 +2,8 @@
   "analysis": {
     "type": "githubReleasesFilesAnalysis",
     "options": {
-      "user": "poppingmoon",
-      "repository": "aria",
+      "user": "wanglin2",
+      "repository": "mind-map",
       "authorizationToken": {"$env": "GITHUB_TOKEN"},
       "per_page": 10
     }    

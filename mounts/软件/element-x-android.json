@@ -2,8 +2,8 @@
   "analysis": {
     "type": "githubReleasesFilesAnalysis",
     "options": {
-      "user": "poppingmoon",
-      "repository": "aria",
+      "user": "element-hq",
+      "repository": "element-x-android",
       "authorizationToken": {"$env": "GITHUB_TOKEN"},
       "per_page": 10
     }    
