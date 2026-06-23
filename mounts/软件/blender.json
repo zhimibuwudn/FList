@@ -1,0 +1,12 @@
+{
+  "analysis": {
+    "type": "githubReleasesFilesAnalysis",
+    "options": {
+      "user": "blender",
+      "repository": "blender",
+      "authorizationToken": {"$env": "GITHUB_TOKEN"},
+      "per_page": 10
+    }    
+  },
+  "downProxy": {}
+}

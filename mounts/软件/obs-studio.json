@@ -1,0 +1,12 @@
+{
+  "analysis": {
+    "type": "githubReleasesFilesAnalysis",
+    "options": {
+      "user": "obsproject",
+      "repository": "obs-studio",
+      "authorizationToken": {"$env": "GITHUB_TOKEN"},
+      "per_page": 10
+    }    
+  },
+  "downProxy": {}
+}
